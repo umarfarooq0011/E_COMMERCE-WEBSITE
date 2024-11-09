@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Graphics Card",
+    "category": "Components",
+    "brand": "ASUS ROG",
+    "price": 80000,
+    "stock": 30,
+    "description": "ASUS ROG graphics card with triple fans, ideal for 4K gaming and rendering.",
+    "image": "/graphic 2[1].png"
+  },
+  {
+    "id": 2,
+    "name": "External Hard Drive",
+    "category": "Storage Devices",
+    "brand": "Seagate",
+    "price": 23000,
+    "stock": 30,
+    "description": "Seagate 2TB external hard drive for backups and large file storage.",
+    "image": "/hard[1].png"
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Headphones",
+    "category": "Audio Devices",
+    "brand": "Vankyo",
+    "price": 5000,
+    "stock": 30,
+    "description": "Vankyo Bluetooth headphones with noise canceling and long battery life.",
+    "image": "/Headphones1[1].png"
+  },
+  {
+    "id": 4,
+    "name": "Gaming Keyboard",
+    "category": "Accessories",
+    "brand": "Gaming",
+    "price": 15000,
+    "stock": 30,
+    "description": "Mechanical gaming keyboard with customizable RGB keys for enhanced typing.",
+    "image": "/keyboard 2[1].png"
+  },
+  {
+    "id": 5,
+    "name": "Motherboard",
+    "category": "Components",
+    "brand": "Z490 TUF",
+    "price": 45000,
+    "stock": 30,
+    "description": "High-performance motherboard supporting multiple RAM slots and PCIe expansion.",
+    "image": "/motherboard.png"
+  },
+  {
+    "id": 6,
+    "name": "Gaming Mouse",
+    "category": "Accessories",
+    "brand": "TUF",
+    "price": 4500,
+    "stock": 30,
+    "description": "Gaming mouse with customizable DPI, RGB lighting, and ergonomic design.",
+    "image": "/mouse 2[1].png"
+  },
+  {
+    "id": 7,
+    "name": "Intel Core i7 11th Gen Processor",
+    "category": "Processors",
+    "brand": "Intel",
+    "price": 55000,
+    "stock": 30,
+    "description": "Intel Core i7 processor with 8 cores, ideal for gaming and content creation.",
+    "image": "/processor.png"
+  },
+  {
+    "id": 8,
+    "name": "RGB Gaming PC Case",
+    "category": "PC Cases",
+    "brand": "ExampleBrand",
+    "price": 15000,
+    "stock": 30,
+    "description": "RGB gaming PC case with tempered glass and high airflow for performance.",
+    "image": "/pc1[1].png"
+  }
+]

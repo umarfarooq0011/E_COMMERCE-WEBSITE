@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kk Computers Contacts</title>
+
+    <!-- Link to the favicon -->
+    <link rel="icon" href="public/LOGO[1].png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      /* From Uiverse.io by ClawHack1 */
+      .contact-form {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .contact-form label {
+        color: black;
+      }
+
+      .contact-form .heading {
+        font-size: 24px;
+        color: black;
+        margin-bottom: 12px;
+        font-weight: bold;
+        display: block;
+      }
+
+      .contact-form form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-form label {
+        margin-bottom: 10px;
+      }
+
+      textarea {
+        resize: none;
+        height: 80px;
+        width: 200px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        outline: none;
+        box-shadow: 0 0 5px #1653af;
+
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .contact-form button[type="submit"] {
+        background-color: #1653af;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .contact-form button[type="submit"]:hover {
+        transition: transform 0.3s ease;
+        box-shadow: 0 0 5px #1653af;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="section-navbar">
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>
+              "Experience swift and seamless shopping with free shipping on all
+              orders!"
+            </p>
+          </div>
+          <div class="sign_in_up">
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img
+              src="public/log.jpg"
+              alt="YourBrand Tech logo"
+              class="logo"
+              width="80%"
+              height="auto"
+            />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">Products</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="addtoCart.html"
+                class="nav-link add-to-cart-button"
+                id="cartValue"
+              >
+                <i class="fas fa-shopping-cart">0</i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========== Start Contact Section ========== -->
+    <section class="section contact">
+      <div class="container">
+        <h2 class="section-common--heading">contact us</h2>
+        <p class="section-common--subheading" id="subcontact">
+          <!-- dynamically text added here  -->
+        </p>
+      </div>
+
+      <div class="contact-form">
+        <span class="heading"></span>
+        <form  action="https://formspree.io/f/mnnqazbo"
+           method="POST">
+          <label for="name">Name</label>
+          <input type="text" required="" placeholder="Enter Your Name" />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required=""
+            placeholder="abc21@example.com"
+          />
+          <label for="subject">subject</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            required
+            autocomplete="off"
+            placeholder="title of your message"
+          />
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            required=""
+            placeholder="We are always here to help you"
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-map">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13509.646059316989!2d74.1926525!3d32.1661761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f291969f67bdb%3A0x8819174c77491df7!2sKK%20Computers!5e0!3m2!1sen!2s!4v1728226991252!5m2!1sen!2s" 
+          width="100%"
+          height="auto"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+
+    
+    <!-- ========== Start footer Section ========== -->
+<footer class="section-footer">
+  <div class="footer-container container">
+    <div class="content_1">
+      <img src="./public/LOGO[1].png" alt="logo" />
+      <p>
+        Welcome to KK EcomStore, your ultimate destination for cutting-edge gadgets!
+      </p>
+      <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
+    </div>
+    <div class="content_2">
+      <h4>SHOPPING</h4>
+      <a href="#">Computer Store</a>
+      <a href="#">Accessories</a>
+      <a href="#">Sales & Discount</a>
+    </div>
+    <div class="content_3">
+      <h4>Experience</h4>
+      <a href="./contact.html">Contact Us</a>
+      <a href="" target="_blank">Payment Method</a>
+      <a href="" target="_blank">Delivery</a>
+      <a href="" target="_blank">Return and Exchange</a>
+    </div>
+    <div class="content_4">
+      <h4>NEWSLETTER</h4>
+      <p>Be the first to know about new<br />arrivals, sales & promos!</p>
+      <div class="f-mail">
+        <input type="email" placeholder="Your Email" />
+        <i class="bx bx-envelope"></i>
+      </div>
+      <hr />
+    </div>
+
+
+  </div>
+  <div class="f-design">
+    <div class="f-design-txt">
+      <p>Design and Code by OMER AWAN</p>
+    </div>
+  </div>
+</footer>
+<!-- ========== End footer Section ========== -->
+
+   
+
+    <a href="https://wa.me/923046046961" class="whatsapp_float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script type="module" src="/main.js"></script>
+    <script  type="module" src="function1.js"></script>
+   
+  </body>
+</html>
