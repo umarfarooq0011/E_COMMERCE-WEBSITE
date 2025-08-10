@@ -962,6 +962,57 @@ textarea {
   text-transform: capitalize;
 }
 
+.chatbot-container {
+    width: 350px;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Urbanist', sans-serif;
+}
+
+.chatbot-header {
+    background-color: var(--buttonColor);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.chatbot-messages {
+    height: 300px;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chatbot-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#chatbot-input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#chatbot-send {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /***** End contact Section *****/
 
 /***** Start Footer Section *****/
