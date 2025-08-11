@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   async function callGeminiAPI(userInput, productContext) {
     const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`;
+    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
     const prompt = `You are a friendly sales assistant for KK Computers. Product list: ${JSON.stringify(productContext, null, 2)}. User asks: "${userInput}". Reply concisely in PKR currency.`;
 
