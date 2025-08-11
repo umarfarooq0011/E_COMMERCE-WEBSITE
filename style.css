@@ -975,10 +975,20 @@ textarea {
 }
 
 .chatbot-header {
-    background-color: var(--buttonColor);
-    color: white;
-    padding: 15px;
-    text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-close-btn {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.chatbot-body {
+  display: none;
 }
 
 .chatbot-messages {
@@ -988,6 +998,11 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+/* A new 'open' class will make the body visible */
+.chatbot-container.open .chatbot-body {
+  display: block;
 }
 
 .chatbot-input {

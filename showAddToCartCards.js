@@ -1,4 +1,19 @@
-import products from "./api/products.json";
+fetch('/api/products.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(products => {
+    // Use the products data here
+    console.log(products);
+    // ...existing logic to handle products...
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
+
 import { getCartProductFromLS } from "./getCartProducts";
 import { fetchQuantityFromCartLS } from "./fetchQuantityFromCartLS";
 import { removeProdFromCart } from "./removeProdFromCart";
