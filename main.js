@@ -2,8 +2,8 @@ import "./style.css";
 import products from "/public/api/products.json";
 import { showProductContainer } from "./homeProductCards";
 
-
-// Define a function named `showProductContainer` that takes an array of products as input.
-showProductContainer(products);
-
-
+// This check ensures that the product-related code only runs on pages
+// where the product container exists (i.e., index.html and products.html).
+if (document.querySelector("#productContainer")) {
+  showProductContainer(products);
+}

@@ -5,22 +5,25 @@ const productContainer = document.querySelector("#productContainer");
 const productTemplate = document.querySelector("#productTemplate");
 
 export const showProductContainer = (products) => {
+  // If the product container or template doesn't exist on the current page, exit the function.
+  if (!productContainer || !productTemplate) {
+    return;
+  }
+
   if (!products) {
     return false;
   }
-
-
 
   products.forEach((curProd) => {
     const { id, name, category, brand, price, stock, description, image } =
       curProd;
 
+    // This line will now only run if productTemplate is not null
     const productClone = document.importNode(productTemplate.content, true);
 
     productClone.querySelector("#cardValue").setAttribute("id", `card${id}`);
 
-    //Populate the template with product data
-
+    // Populate the template with product data
     productClone.querySelector(".productName").textContent = name;
     productClone.querySelector(".productImage").src = image;
     productClone.querySelector(".category").textContent = category;
@@ -30,7 +33,6 @@ export const showProductContainer = (products) => {
     productClone.querySelector(".productQuantity").textContent = 1; // Default quantity
 
     // Add event listeners for increment and decrement buttons
-
     productClone
       .querySelector(".stockElement")
       .addEventListener("click", (event) => {
@@ -45,6 +47,4 @@ export const showProductContainer = (products) => {
     // Append the cloned template to the container
     productContainer.appendChild(productClone);
   });
-
 };
-
